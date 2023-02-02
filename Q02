@@ -1,12 +1,12 @@
 N = int(input('1~99 중의 정수를 택하시오: '))
 num=N
-count = 0
+count = 0 #사이클 수
 
 while True:
-    a = N // 10
-    b = N % 10
-    c = (a+b) % 10
-    N = (b*10) + c
+    a = N // 10 #10의자리
+    b = N % 10 #1의자리
+    c = (a+b) % 10 #새로운 수의 오른쪽 수
+    N = (b*10) + c #새로운 수
    
     count +=1
     if (N==num) : break
